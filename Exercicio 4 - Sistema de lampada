@@ -1,0 +1,38 @@
+using lampada;
+
+Lampada _lampada = new Lampada();
+
+while (true)
+{
+    Console.WriteLine("1 - Ligar");
+    Console.WriteLine("2 - Desligar");
+    Console.WriteLine("3 - Mostrar Estado");
+    Console.Write("Digite uma opção: ");
+    
+    int opcao = int.Parse(Console.ReadLine());
+    
+    switch (opcao)      
+    {
+        case 1:
+            _lampada.Ligar();
+            Console.WriteLine("Lâmpada ligada.");
+            Console.ReadKey();
+            Console.Clear();
+            break;
+       
+        case 2:
+            _lampada.Desligada();
+            Console.WriteLine("Lâmpada desligada.");
+            Console.ReadKey();
+            Console.Clear();
+            break;
+       
+        case 3:
+            _lampada.MostrarEstado();
+            Console.ReadKey();
+            Console.Clear();
+            break;
+    }
+}
+
+

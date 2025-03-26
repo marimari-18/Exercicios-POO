@@ -1,0 +1,15 @@
+using ControleDeProdutosPOO;
+
+ControleDeProdutos _controledeprodutos = new ControleDeProdutos();
+
+_controledeprodutos.AdicionarEstoque(10);
+Console.Write(_controledeprodutos.Quantidade);
+Console.ReadLine();
+
+_controledeprodutos.RemoverEstoque(2);
+Console.Write(_controledeprodutos.Quantidade);
+Console.ReadLine();
+
+_controledeprodutos.ExibirDetalhes();
+Console.Write(_controledeprodutos.Quantidade);
+Console.ReadLine();

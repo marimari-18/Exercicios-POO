@@ -1,0 +1,36 @@
+using AlunoNota;
+
+
+AlunoENota _alunoenota = new AlunoENota();
+
+_alunoenota.RA = (034108);
+Console.Write(_alunoenota.RA);
+Console.ReadLine();
+
+_alunoenota.Nome = ("Rafael Caixeta");
+Console.Write(_alunoenota.Nome);
+Console.ReadLine();
+
+_alunoenota.NotaProva1 = (6);
+Console.Write(_alunoenota.NotaProva1);
+Console.ReadLine();
+
+_alunoenota.NotaProva2 = (5);
+Console.Write(_alunoenota.NotaProva2);
+Console.ReadLine();
+
+_alunoenota.NotaTrabalho1 = (3);
+Console.Write(_alunoenota.NotaTrabalho1);
+Console.ReadLine();
+
+_alunoenota.NotaTrabalho2 = (3);
+Console.Write(_alunoenota.NotaTrabalho2);
+Console.ReadLine();
+
+_alunoenota.CalcularMedia();
+
+_alunoenota.CalcularNotaFinal();
+Console.Write(_alunoenota.NotaFinal);
+Console.ReadLine();
+
+_alunoenota.Imprimir();

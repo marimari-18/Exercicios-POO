@@ -1,0 +1,15 @@
+using ContaBancáriaPOOExercício2;
+
+ContaBancaria _contabancaria = new ContaBancaria();
+
+_contabancaria.Depositar(50);
+Console.Write(_contabancaria.Saldo);
+Console.ReadLine();
+
+_contabancaria.Sacar(30);
+Console.Write(_contabancaria.Saldo);
+Console.ReadLine();
+
+_contabancaria.ExibirSaldo();
+Console.Write(_contabancaria.Saldo);
+Console.ReadLine();
